@@ -1,0 +1,32 @@
+<svg id="Shahab_Jasemi" data-name="Shahab Jasemi" xmlns="http://www.w3.org/2000/svg" width="1563" height="288" viewBox="0 0 1563 288">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #c69278;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.3;
+      }
+
+      .cls-2 {
+        opacity: 0.15;
+      }
+
+      .cls-3 {
+        opacity: 0.1;
+      }
+
+      .cls-4 {
+        opacity: 0.05;
+      }
+    </style>
+  </defs>
+  <path id="Floating_Elements" data-name="Floating Elements" class="cls-1" d="M224.391,2501.85l3.5,5.69,6.491,1.56-4.331,5.09,0.517,6.65-6.172-2.54-6.172,2.54,0.517-6.65-4.331-5.09,6.491-1.56Z" transform="translate(-187 -2380)"/>
+  <path id="Floating_Elements-2" data-name="Floating Elements" class="cls-1" d="M1713.5,2380.01l6.13,9.88,11.37,2.72-7.59,8.83,0.91,11.56-10.82-4.43-10.82,4.43,0.91-11.56-7.59-8.83,11.37-2.72Z" transform="translate(-187 -2380)"/>
+  <path id="Floating_Elements-3" data-name="Floating Elements" class="cls-2" d="M1653,2573.01l3.5,5.68,6.5,1.57-4.34,5.08,0.52,6.66-6.18-2.55-6.18,2.55,0.52-6.66-4.34-5.08,6.5-1.57Z" transform="translate(-187 -2380)"/>
+  <path id="Floating_Elements-4" data-name="Floating Elements" class="cls-3" d="M1742.5,2619l2.63,4.2,4.87,1.15-3.25,3.74,0.39,4.91-4.64-1.88-4.64,1.88,0.39-4.91-3.25-3.74,4.87-1.15Z" transform="translate(-187 -2380)"/>
+  <path id="Floating_Elements-5" data-name="Floating Elements" class="cls-4" d="M192,2659l1.751,2.7,3.25,0.74-2.169,2.41,0.259,3.15L192,2666.79l-3.091,1.21,0.259-3.15L187,2662.44l3.251-.74Z" transform="translate(-187 -2380)"/>
+  <path id="Floating_Elements-6" data-name="Floating Elements" class="cls-3" d="M281,2615l2.451,4.2,4.55,1.15-3.036,3.74,0.362,4.91L281,2627.12l-4.327,1.88,0.362-4.91L274,2620.35l4.551-1.15Z" transform="translate(-187 -2380)"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700.184" height="199.19" viewBox="0 0 700.184 199.19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        opacity: 0.05;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="959.998" y1="1756.69" x2="959.998" y2="1557.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.502"/>
+      <stop offset="1" stop-color="#bc8971"/>
+    </linearGradient>
+  </defs>
+  <path id="ShahabJasemi" class="cls-1" d="M1037.71,1563.03l1.14-5.53c135.66,8.73,242.17,39.51,271.24,78.5h-32.46C1254.7,1600.24,1159.92,1571.67,1037.71,1563.03ZM642.367,1636H609.9c28.545-38.28,131.745-68.65,263.88-78l1.152,5.58C756.286,1572.83,664.834,1600.96,642.367,1636Zm55.5,70.81c41.411,16.44,101.216,28.84,170.8,34.7l-5.318,14.71c-86.55-6.94-159.839-22.95-206.584-44.23Zm524.264,0.01,42.72,4.43c-47.72,22.14-124.03,38.69-214.2,45.43l-5.31-14.68C1117.48,1736.35,1179.54,1723.73,1222.13,1706.82Z" transform="translate(-609.906 -1557.5)"/>
+</svg>

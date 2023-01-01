@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1816" height="1816" viewBox="0 0 1816 1816">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="908" cy="908" r="908" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bc8971" stop-opacity="0.149"/>
+      <stop offset="1" stop-color="#15141a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle id="Glow_1" data-name="Glow 1" class="cls-1" cx="908" cy="908" r="908"/>
+</svg>
