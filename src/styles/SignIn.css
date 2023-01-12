@@ -1,0 +1,130 @@
+.sign-container {
+    max-width: 1170px;
+    margin: -160px auto;
+}
+
+.scroll-section {
+    gap: 3px;
+    position: relative;
+}
+
+.scroll-img, .scroll-text {
+    transform: rotate(90deg);
+    width: fit-content;
+}
+
+.scroll-text {
+    width: 20px;
+    height: 10px;
+}
+
+.scroll-text p {
+    color: var(--pink);
+    font: 500 12px 'Raleway', sans-serif;
+}
+
+.scroll-line {
+    height: 485px;
+    display: inline-block;
+    width: 1px;
+    border-left: 1px solid var(--pink);
+    position: absolute;
+    left: 7px;
+    top:64px;
+}
+
+.sign-form {
+    margin-top: 190px;
+    padding-inline: 59px;
+}
+
+/* .sign-form div p {
+     
+} */
+
+.sign-form-items {
+    margin-top: -5px;
+    font: 300 16px 'Raleway', sans-serif;
+    color: var(--grey);
+}
+
+.sign-title {
+    margin-bottom: 25px;
+    font: 300 48px 'Raleway', sans-serif;
+    color: var(--silver);
+}
+.sign-title span {
+    color: var(--pink);
+}
+
+.input-container {
+    width: 1100px;
+    margin-top: 50px;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-box {
+    width: 370px;  
+}
+
+.input-field {
+    width: 100%;
+    padding: 17px 0 ;
+    background-color: var(--elephant);
+    border-radius: 40px;
+    border: 1px solid var(--ash);
+}
+
+.input-field::placeholder {
+    font: 500 24px 'Raleway', sans-serif;
+    padding-inline: 29px;
+}
+
+input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    filter: invert(85%);
+    clip-path: circle(60% at 50% 50%);
+}
+
+.remember-text {
+    padding-inline: 5px;
+    font: 400 16px 'Raleway', sans-serif;
+    color: var(--grey);
+}
+.sign-btn {
+    font: 500 24px 'Raleway', sans-serif;
+    color: var(--rosewood);
+    border: 1px solid var(--rosewood);
+    padding: 15px 40px;
+    border-radius: 40px;
+    background-color: rgba(188, 137, 113, 0.1);
+}
+.checkbox-container {
+    width: fit-content;
+}
+
+.checkbox-items {
+    padding: 0 9px;
+}
+
+.sign-btn img {
+    padding-inline: 5px;
+}
+
+.sign-pass-link {
+    margin-top: 37px;
+    padding-inline: 22px;
+    gap: 160px;
+}
+
+.sign-pass-text{
+    font: 400 20px 'Raleway', sans-serif;
+}
+.sign-pass-text a {
+    color: var(--rosewood);
+}
+.sign-pass-text p {
+    color: var(--grey);
+}

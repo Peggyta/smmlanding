@@ -1,0 +1,213 @@
+.banner-container {
+    width: auto;
+    max-width: 1170px;
+    margin: 170px auto 0 auto;
+}
+
+.img-container {
+    width: 570px;
+    height: 713px;
+}
+
+.mobile-bg-responsive, .mobile-bg-responsive{
+    display: none;
+}
+
+.description {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 89px;
+    width: max-content;
+}
+
+.description h1 {
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.smm-title {
+    color: var(--rosewood);
+}
+
+.smm-text-mobile {
+    display: none;
+}
+
+.description p, .panel-title {
+    color: var(--silver);
+}
+
+.description p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.smm-text {
+    margin-top: 13px;
+}
+
+.services {
+    margin-top: 70px;
+    width: 478px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-text {
+    color: var(--silver);
+    font: 500 48px 'Raleway', sans-serif;
+    line-height: 46px;
+    height: 165px;
+}
+
+.services-btn {
+    width: 478px;
+    margin-top: 65px;
+}
+
+.services-btn a {
+    font: 500 24px 'Raleway', sans-serif;
+    color: var(--rosewood);
+    border: 1px solid var(--rosewood);
+    padding: 20px 39px;
+    border-radius: 40px;
+    background-color: rgba(188, 137, 113, 0.1);
+    margin-left: 135px;
+}
+
+.logo-btn {
+    padding-right: 10px;
+}
+
+/*Responsive*/
+@media (max-width: 1024px) {
+    .banner-container {
+        max-width: 750px;
+        margin: 30px auto;
+        background-image: url('../images/Mobile-image.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right; 
+    }
+    .description {
+        margin-top: 50px;
+    }
+    .img-container {
+        display: none;
+    }
+    .description h1 {
+        font-size: 48px;
+    }
+
+    .description p {
+        font-size: 18px;
+        line-height: 10px;
+    }
+    
+    .services {
+        margin-top: 50px;
+        width: 378px;
+    }
+    .services-text {
+        font-size: 34px;
+    }
+    .services-btn {
+        width: 378px;
+        margin-top: 30px;  
+    }
+    .services-btn a {
+        font-size:18px;
+        padding: 14px 0;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner-container {
+        max-width: 600px;
+        background-image: linear-gradient(-20deg, hsla(250, 13%, 9%, 1) 20%, hsla(250, 13%, 9%, 0) 100%), url('../images/Mobile-image.png');
+    }
+    .banner {
+        margin: auto;  
+    }
+    .img-container {
+        display: none;
+    }
+    .description {
+        z-index: 1;
+    }
+    .description h1 {
+        font-size: 38px;
+    }
+    .description p {
+        font-size: 18px;
+        line-height: 10px;
+    }
+    .services {
+        justify-content: space-around;
+    }
+    
+    .services-text {
+        font-size: 30px;
+        line-height: 44px;
+        height: 165px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .banner-container {
+        max-width: 500px;
+        background-position-x: 85px;
+    }
+    .banner {
+        width: 96%;
+        margin: auto;
+    }
+    .description {
+        width: 290px;
+    }
+    .description h1 {
+        width: 300px;
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 16px;
+    }
+    .smm-text, .second-smm-text {
+        display: none;
+    }
+    .smm-text-mobile {
+        display:inline;
+    }
+    .description p {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .services {
+        margin-top: 50px;
+        justify-content: space-between;
+        width: 240px;
+    }
+
+    .services div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services div img {
+        width: 50px;
+    }
+    .services-text {
+        font: 500 24px 'Raleway', sans-serif;
+        line-height: 15px;
+        padding-top: 12px;
+    }
+    .services-btn {
+        width: 100%;
+    }
+    .services-btn a {
+        font: 500 25px 'Raleway', sans-serif;
+    }
+}

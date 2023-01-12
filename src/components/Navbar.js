@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../styles/Navbar.css';
 //Image & Icons
 import logo from '../images/Logo.png';
@@ -8,6 +8,26 @@ import hamburMenu from '../images/hambur.png';
 
 
 const Navbar = () => {
+    const [show, setShow] = useState(true);
+    const [currentScrollY, setCurrentScrollY] = useState(0);
+    const controlNav = () => {
+        if(typeof window !== 'undefined') {
+            if(window.scrollY > currentScrollY) {
+                setShow(true); //show nav
+            } else {
+                setShow(false); // hide nav
+            }
+            setCurrentScrollY(window.scrollY); //current page location
+        }
+    };
+    useEffect(()=>{
+        if(typeof window !== 'undefined') {
+            window.addEventListener('scroll', controlNav);
+            return () => {
+                window.removeEventListener('scroll', controlNav);
+            };
+        }
+    },[currentScrollY]);
     return (
         <>
         <div className='svg-container'>
@@ -15,7 +35,7 @@ const Navbar = () => {
                 <div className='svg-left position-absolute'> </div>
                 <div className='svg-right position-absolute'></div>
             </div>
-                <div className='nav-container'>
+                <div className={`active ${show && 'hidden'}`}>
                     <ul className='nav-list d-flex justify-content-center align-items-center list-unstyled position-relative z-index-1  '>
                         <li><a className='nav nav-link-one text-decoration-none' href='#'>Sign in</a></li>
                         <li><a className='nav nav-link-two text-decoration-none' href='#'>Sign up</a></li>
@@ -26,10 +46,10 @@ const Navbar = () => {
                         <li><a className='nav nav-link-three text-decoration-none' href='#'>API</a></li>
                         <li><a className='nav nav-link-four text-decoration-none' href='#'>Services</a></li>
                     </ul>
+                    <div className='divider-container justify-content-center'>
+                        <img src={divider} alt='divider' />
+                    </div> 
                 </div>
-            <div className='divider-container justify-content-center'>
-                <img src={divider} alt='divider' />
-            </div> 
         </div>
         <div className='mobile-menu position-relative'>
             <div className='mobile-svg position-absolute'></div>

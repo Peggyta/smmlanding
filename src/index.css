@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,4 +15,6 @@ body {
   --cement: #b2b2b2;
   --grey: #808080;
   --light-grey: #a3a3a3;
+  --elephant: #211f26;
+  --ash: #3a393f;
 }
