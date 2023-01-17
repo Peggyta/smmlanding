@@ -126,11 +126,13 @@
 @media (max-width: 768px) {
 
     .banner-container {
-        max-width: 600px;
+        max-width:600px;
         background-image: linear-gradient(-20deg, hsla(250, 13%, 9%, 1) 20%, hsla(250, 13%, 9%, 0) 100%), url('../images/Mobile-image.png');
     }
     .banner {
-        margin: auto;  
+        margin: auto;
+        padding-inline: 60px; 
+        width: 100%; 
     }
     .img-container {
         display: none;
@@ -148,6 +150,10 @@
     .services {
         justify-content: space-around;
     }
+
+    .services-btn {
+        width: 100%;
+    }
     
     .services-text {
         font-size: 30px;
@@ -159,11 +165,11 @@
 @media (max-width: 576px) {
 
     .banner-container {
-        max-width: 500px;
+        max-width: 550px;
         background-position-x: 85px;
     }
     .banner {
-        width: 96%;
+        width: 100%;
         margin: auto;
     }
     .description {

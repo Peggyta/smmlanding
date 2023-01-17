@@ -38,10 +38,6 @@
     padding-inline: 59px;
 }
 
-/* .sign-form div p {
-     
-} */
-
 .sign-form-items {
     margin-top: -5px;
     font: 300 16px 'Raleway', sans-serif;
@@ -56,16 +52,29 @@
 .sign-title span {
     color: var(--pink);
 }
+.sign-mobile-form {
+    display: none;
+}
 
 .input-container {
     width: 1100px;
     margin-top: 50px;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
 }
 
 .input-box {
-    width: 370px;  
+    width: 370px; 
+    height: 70px;
+    position: relative;
+}
+
+.input-box span {
+    color: var(--grey);
+    font-size: 14px;
+    font-family: 'Raleway',sans-serif;
+    margin-inline: 30px;
 }
 
 .input-field {
@@ -79,6 +88,18 @@
 .input-field::placeholder {
     font: 500 24px 'Raleway', sans-serif;
     padding-inline: 29px;
+}
+
+.input-field.input-field:focus {
+    outline: none;
+    color: var(--rosewood);
+    padding-inline-start: 20px;
+}
+
+.input-icon-hide {
+    position: absolute;
+    right: 34px;
+    top: 18px
 }
 
 input[type=checkbox] {
@@ -106,15 +127,23 @@ input[type=checkbox] {
 }
 
 .checkbox-items {
+    display: flex;
+    align-items: center;
     padding: 0 9px;
+    height: 70px;
 }
-
+.checkbox-items-mobile {
+    display: none;
+}
+.forgot-pass-link {
+    display: none;
+}
 .sign-btn img {
     padding-inline: 5px;
 }
 
 .sign-pass-link {
-    margin-top: 37px;
+    margin-top: 30px;
     padding-inline: 22px;
     gap: 160px;
 }
@@ -127,4 +156,272 @@ input[type=checkbox] {
 }
 .sign-pass-text p {
     color: var(--grey);
+}
+/*Responsive*/
+@media (max-width: 1024px) {
+    .sign-container {
+        max-width: 750px;
+        margin: -110px auto;
+    }
+
+    .scroll-line {
+        height: 480px;
+        display: inline-block;
+        width: 1px;
+        border-left: 1px solid var(--pink);
+        position: absolute;
+        left: 7px;
+        top:140px;
+    }
+    .scroll-img,
+    .scroll-text {
+        display: none;
+    }
+    .sign-form {
+        margin-top: 130px;
+        width: 100%;
+    }
+    .sign-form-items {
+        margin-top: -5px;
+    }
+    
+    .input-container {
+        width: auto;
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .input-boxes {
+        flex-direction: column;
+        width: 100%;
+    }
+    .input-box {
+        width: 100%; 
+    }
+    .input-icon-hide {
+        right: 35px;
+        top: 18px
+    }
+    .checkbox-container {
+        width: 600px;
+        justify-content: space-between;
+    }
+   
+   .sign-btn {
+    padding: 15px 160px;
+    }
+    .sign-pass-link {
+        justify-content: space-between;
+    }
+    .sign-pass-text{
+        width: 100%;
+        font: 400 18px 'Raleway', sans-serif;
+    }
+    .recover-pass {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-container {
+        max-width: 600px;
+        margin-top:50px;
+    }
+    .scroll-section,
+    .scroll-line {
+        position: unset;
+        display: none;
+    }
+    .sign-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sign-title span {
+        padding-inline: 7px;
+    }
+    .sign-form-items {
+        display: none;
+    }
+    .sign-mobile-form {
+        text-align: center;
+        display: block;
+        font: 300 20px 'Raleway', sans-serif;
+        color: var(--grey);
+        margin-top: -10px;
+    }
+    .input-boxes {
+        flex-direction: column;
+        width: 100%;
+    }
+    .input-box {
+        width: auto; 
+    }
+    .input-icon-hide {
+        right: 160px;
+        top: unset;
+        bottom: -315px;
+    }
+    .input-icon-hide {
+        right: 35px;
+        top: 18px
+    }
+    .checkbox-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .checkbox-items {
+        display: none;
+    }
+    .checkbox-items-mobile {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 34px;
+        margin-top: 8px;
+    }
+/*slider*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--elephant);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--pink);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(134, 91, 51);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #373433;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+    .forgot-pass-link {
+        display: block;
+    }
+
+    .sign-btn {
+        padding: 15px 110px;
+        width: 100%;
+        }
+    
+    .sign-pass-text {
+            text-align: center;
+        }
+    #forgot-pass {
+        display: none;
+    }
+    .pass-link-mobile a {
+        color: var(--rosewood);
+    }
+    .remember-link-mobile {
+        color: var(--grey);
+        padding-inline: 10px;
+    }
+
+    .remember-link-mobile,
+    .pass-link-mobile {
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .sign-container {
+        max-width: 550px;
+        margin-top: 40px;
+    }
+    .sign-mobile-form {
+        font: 300 18px 'Raleway', sans-serif; 
+    }
+}
+
+@media (min-width: 320px) and (max-width: 493px) {
+    .sign-container {
+        max-width: auto;
+    }
+    .sign-mobile-form {
+        font: 300 16px 'Raleway', sans-serif; 
+    }
+
+    .input-field {
+        padding: 12px 0 ;
+    }
+    .input-icon-hide {
+        right: 32px;
+        top: 12px
+    }
+    .switch {
+        height: 25px;
+    }
+    .slider:before {
+        height: 21px;
+        width: 21px;
+        left: 8px;
+        bottom: 2px;
+      }
+    .checkbox-items-mobile {
+        width: max-content;
+        flex-direction: column;
+        gap:10px;
+    }
+    .remember-link-mobile,
+    .pass-link-mobile {
+        font-size: 17px; 
+    }
+    .sign-btn-section {  
+        width: 100%;   
+    }
+    .sign-btn {
+        padding: 12px 20px;
+        }
+        .sign-pass-text {
+            font-size: 15px;
+        }
 }

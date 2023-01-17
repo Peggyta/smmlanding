@@ -8,13 +8,15 @@
     margin: auto;
 }
 
-.active{
+.active {
     width: 100%;
     position: fixed;
+    background-color: transparent;
     top: 30px;
     transition: 0.3s linear;
     z-index: 2;
 }
+
 .hidden{
     height: 4rem;
     width: 100%;

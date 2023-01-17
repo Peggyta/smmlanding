@@ -13,9 +13,9 @@ const Navbar = () => {
     const controlNav = () => {
         if(typeof window !== 'undefined') {
             if(window.scrollY > currentScrollY) {
-                setShow(true); //show nav
+                setShow(false); //hide nav
             } else {
-                setShow(false); // hide nav
+                setShow(true); // show nav
             }
             setCurrentScrollY(window.scrollY); //current page location
         }
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <div className='svg-left position-absolute'> </div>
                 <div className='svg-right position-absolute'></div>
             </div>
-                <div className={`active ${show && 'hidden'}`}>
+            <div className={show ? 'active': 'hidden'}>
                     <ul className='nav-list d-flex justify-content-center align-items-center list-unstyled position-relative z-index-1  '>
                         <li><a className='nav nav-link-one text-decoration-none' href='#'>Sign in</a></li>
                         <li><a className='nav nav-link-two text-decoration-none' href='#'>Sign up</a></li>
