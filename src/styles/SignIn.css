@@ -6,6 +6,7 @@
 .scroll-section {
     gap: 3px;
     position: relative;
+    z-index: -1;
 }
 
 .scroll-img, .scroll-text {

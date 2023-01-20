@@ -1,0 +1,229 @@
+.features-container {
+    max-width: 1170px;
+    margin: 300px auto auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.glow-area-one {
+   background-image: url('../images/Glow\ 3.svg');
+   background-position:center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 400px;
+   height: 400px;
+   position: absolute;
+   top: -147px;
+   z-index: 1;
+}
+
+.features-title {
+    margin-bottom: 74px;
+}
+
+.features-title h2 {
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.features-title h2,
+.span-two {
+    color: var(--silver);
+}
+ .span-one {
+    color: var(--rosewood);
+ }
+
+ .ring-svg {
+    background-image: url('../images/Ring.svg');
+    background-repeat: no-repeat;
+    width: 701px;
+    height: 207px;
+    margin: auto;
+    position: relative;
+ }
+
+ .features-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+ }
+ .features-description p {
+    text-align: center;
+ }
+ .features-description.one {
+    top: -5px;
+    left: 136px; 
+ }
+ .features-description.two {
+    bottom: -45px;
+    left: 132px; 
+ }
+
+ .features-description.three {
+    left: -196px;
+    top:95px;
+ }
+
+ .features-description.four {
+    right: -160px;
+    top: 96px;  
+ }
+
+ .description-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 7px;
+    color: var(--darksilver);
+ }
+ 
+ .description-text {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--cement);
+ }
+
+/* @media (max-width: 1024px) {
+   .features-container {
+      max-width: 750px;
+      margin-top: 200px;
+  }
+  .ring-svg {
+   width: 550px;
+   background-size: contain;
+}
+  
+.description-title {
+   font-size: 22px;
+  
+   }
+.description-text {
+   display: none;
+   }
+   .features-description.one {
+      top: -3px;
+      left: 214px; 
+   }
+   .features-description.two {
+      bottom: 40px;
+      left: 206px; 
+   }
+  
+   .features-description.three {
+      left: -126px;
+      top: 85px;
+   }
+  
+   .features-description.four {
+      right: -100px;
+      top: 85px;  
+   }
+} */
+
+@media (max-width: 1024px) {
+   .features-container {
+      max-width: 600px;
+      margin-top: 200px;
+  }
+  .ring-svg {
+   width: 500px;
+   background-size: contain;
+   }
+   .description-title {
+      font-size: 18px;
+   }
+   .description-text {
+      display: none;
+   }
+   .features-description.one {
+      left: 200px; 
+   }
+   .features-description.two {
+      bottom: 50px;
+      left: 196px; 
+   }
+  
+   .features-description.three {
+      left: -90px;
+      top: 78px;
+   }
+  
+   .features-description.four {
+      right: -80px;
+      top: 78px;  
+   }
+
+}
+
+@media (max-width: 768px) {
+   .features-container {
+      max-width: 550px;
+      margin-top: 261px;
+   }
+
+  .features-title {
+   margin-bottom: 14px;
+   }
+   
+   .ring-svg {
+      width: max-content;
+      background-image: unset;
+      background-repeat: unset;
+      height: unset;
+      position: unset;
+      display: flex;
+      flex-direction: column;
+   }
+   .description-title {
+      font-size: 24px;
+      line-height: 5px;
+      padding-top: 15px;
+   }
+   .description-text {
+      display: block;
+   }
+   
+   .features-description {
+      position: unset;
+      padding: 30px 0;
+      padding-inline: 20px;
+      margin: auto;
+      border-radius: 20px;
+      width: 550px;
+   }
+
+   .features-description.one,
+   .features-description.three {
+      background-image: linear-gradient(to left, var(--shadow), var(--body));
+      width: 100%;
+   }
+
+   .features-description.two,
+   .features-description.four {
+      background-image: linear-gradient(to right, var(--shadow), var(--body));
+   }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+   .features-container {
+      max-width: auto;
+      width: auto;
+   }
+  .ring-svg {
+   width: auto;
+   background-image: unset;
+   background-repeat: unset;
+   height: unset;
+   position: unset;
+   display: flex;
+   flex-direction: column;
+   }
+  .features-description {
+   width: 90%;
+   }  
+}
