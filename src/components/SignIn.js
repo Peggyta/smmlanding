@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import { validation } from '../functions/validation';
 import logoScroll from '../images/logo-Icon.png';
 import eyelid from '../images/eye.png';
 import '../styles/SignIn.css';
@@ -13,7 +12,7 @@ const SignIn = () => {
     const [errors, setErrors] = useState({});
 
     useEffect(()=> {
-        setErrors(validation(data))
+        setErrors(data)
     },[data,entered]);
 
     const changeHandler = event => {
@@ -23,9 +22,7 @@ const SignIn = () => {
             setData({...data,[event.target.name]: event.target.value})
         }
     }
-    const focusHandler = event => {
-        setEntered({...entered,[event.target.name]: true})
-    }
+   
     return (
         <div className='w-100'>
             <div className='sign-container'>
@@ -49,12 +46,12 @@ const SignIn = () => {
                             <div className='input-boxes d-flex gap-2'>
                                 <div className='input-box'>
                                     <input className='input-field' type='text' name='userName' 
-                                    value={data.userName} placeholder='Username' onChange={changeHandler} onFocus={focusHandler} />
+                                    value={data.userName} placeholder='Username' onChange={changeHandler} />
                                     {errors.userName && entered.userName && <span>{errors.userName}</span>}
                                 </div>
                                 <div className='input-box'>
                                     <input className='input-field' type='password' name='password'
-                                    value={data.password} placeholder='Password' onChange={changeHandler} onFocus={focusHandler}  />
+                                    value={data.password} placeholder='Password' onChange={changeHandler} />
                                     {errors.password && entered.password && <span>{errors.password}</span>}
                                         <img className='input-icon-hide' src={eyelid} alt='hide password' />
                                 </div>
