@@ -14,7 +14,7 @@
     top: 0;
     padding-top: 30px;
     transition: 0.3s linear;
-    z-index: 0;
+    z-index: 1;
     background-color: #16151a5b;
     backdrop-filter: blur(30px);
 }
@@ -36,7 +36,7 @@
     background-position-x: -340px;
     background-size: contain;
     background-image: url('../images/Glow-1.svg');
-    z-index: 1;
+    z-index: 2;
 }
 
 .svg-right {
@@ -48,7 +48,7 @@
     top:-500px;
     background-size: contain;
     background-image: url('../images/Glow-2.svg');
-    z-index: 1;
+    z-index: 2;
     
 }
 

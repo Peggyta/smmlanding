@@ -6,16 +6,24 @@
 }
 
 body {
-  background-color: #16151a;
+  background-color: var(--body);
 }
 
 :root {
   --rosewood: #bd8971;
   --pink: #ffb898;
   --silver: #e6e6e6;
+  --darksilver: #e5e5e5;
   --cement: #b2b2b2;
   --grey: #808080;
   --light-grey: #a3a3a3;
   --elephant: #211f26;
   --ash: #3a393f;
+  --body: #16151a;
+  --shadow: #1e1c25;
+  --darkpink: #262023;
+  --mocha: #bc8971;
+  --cocoa: #7c5c50;
+  --chocolate: #644c43;
+  --coffee: #443533;
 }

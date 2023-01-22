@@ -1,0 +1,216 @@
+.begin-container {
+    max-width: 1170px;
+    margin: 205px auto 119px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.begin-title-container h2 {
+    font-weight: 300;
+    font-size: 48px;
+    color: var(--silver);
+}
+
+.begin-title-container h2 span {
+    color: var(--rosewood);
+}
+
+.begin-items {
+    margin-bottom: 59px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.glow-area-two {
+    background-image: url('../images/Glow\ 3.svg');
+    width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -270px;
+    background-position-x: 10px;
+    z-index: -1; 
+}
+
+.begin-scroll-img,
+.begin-scroll-text {
+    transform: rotate(90deg);
+    width: fit-content;
+    position: absolute;
+}
+
+.begin-scroll-text {
+    color: var(--pink);
+    font: 500 12px 'Raleway', sans-serif;
+    top: -110px;
+}
+
+.begin-scroll-text p {
+    display: inline;
+}
+
+.begin-scroll-img {
+    top:-148px;
+}
+
+.begin-line {
+    width: 1px;
+    height: 60px;
+    border-left: 1px solid var(--pink);
+    position: absolute;
+    top: -80px;
+}
+
+.begin-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 30px;
+    background-color: var(--darkpink);
+    width: 100%;
+    height: 193px;
+    border-radius: 35px;
+}
+
+.begin-description-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 83px;
+    padding: auto;
+    width: 100%;
+    top: 100px;
+}
+
+.begin-description-title p {
+    color: var(--silver);
+    font-weight: 500px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.begin-logo {
+    position: absolute;
+    width: 31px;
+    height: 40px;
+}
+
+.begin-logo.one {
+    right: -22px;
+    filter: brightness(2);
+}
+
+.begin-logo.two {
+    right: -22px;
+    filter: brightness(1.5);
+}
+
+.begin-logo.three {
+    right: -22px;
+}
+
+.begin-description-text {
+    padding-top: 10px;
+}
+
+.begin-description-text p{
+    color: var(--cement);
+    font-size: 16px;
+    font-weight: 300px;
+    text-align: center;
+    line-height: 13px;
+}
+
+.begin-description-card {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin-top: 50px;
+   padding-inline: 10px;
+}
+
+.begin-description-title{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   padding-top: 15px;
+   border-radius: 40px;
+   position: relative;
+}
+
+
+.begin-description-title.one {
+    background-color: var(--mocha);
+    z-index: 4;
+    width: 318px;
+    position: absolute; 
+    left: 0;
+}
+.begin-description-title.two {
+    background-color: var(--cocoa);
+    z-index: 3;
+    width: 350px;
+    position: absolute; 
+    left: 21%;
+    padding-inline-start: 35px;
+}
+.begin-description-title.three {
+    background-color: var(--chocolate);
+    position: absolute; 
+    left: 45%;
+    z-index: 2;
+    width: 340px;
+    padding-inline-start: 35px;  
+}
+.begin-description-title.four {
+    background-color: var(--coffee);
+    z-index: 1;
+    position: absolute; 
+    left: 68%;
+    width: 375px;
+    padding-inline-start: 60px;
+}
+ /*responsive*/
+ @media (max-width: 1024px) {
+    .begin-container {
+    max-width: 750px;
+    margin: 137px auto 119px auto;
+    }
+    .begin-description {
+        height: 183px;
+        gap: 10px;
+    }
+    .begin-description-box {
+        height: 73px;
+        width: 750px;
+    }
+     
+    .begin-description-title p {
+        font-size: 18px;
+    }
+    .begin-description-title.one {
+        width: 230px;
+    }
+    .begin-description-title.two {
+        width: 250px;
+        padding-inline-start: 63px;
+    }
+    .begin-description-title.three {
+        width: 240px;
+        padding-inline-start: 65px;  
+    }
+    .begin-description-title.four {
+        width: 243px;
+        padding-inline-start: 72px;
+    }
+ }

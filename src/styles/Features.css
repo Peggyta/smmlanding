@@ -88,43 +88,6 @@
     color: var(--cement);
  }
 
-/* @media (max-width: 1024px) {
-   .features-container {
-      max-width: 750px;
-      margin-top: 200px;
-  }
-  .ring-svg {
-   width: 550px;
-   background-size: contain;
-}
-  
-.description-title {
-   font-size: 22px;
-  
-   }
-.description-text {
-   display: none;
-   }
-   .features-description.one {
-      top: -3px;
-      left: 214px; 
-   }
-   .features-description.two {
-      bottom: 40px;
-      left: 206px; 
-   }
-  
-   .features-description.three {
-      left: -126px;
-      top: 85px;
-   }
-  
-   .features-description.four {
-      right: -100px;
-      top: 85px;  
-   }
-} */
-
 @media (max-width: 1024px) {
    .features-container {
       max-width: 600px;
