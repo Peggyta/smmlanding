@@ -148,7 +148,6 @@
    position: relative;
 }
 
-
 .begin-description-title.one {
     background-color: var(--mocha);
     z-index: 4;
@@ -214,3 +213,11 @@
         padding-inline-start: 72px;
     }
  }
+
+ @media (max-width: 768px) {
+    .begin-container {
+        display: none;
+    }
+ }
+
+ 

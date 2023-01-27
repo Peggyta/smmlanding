@@ -1,22 +1,22 @@
 .svg-container {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-}
-
-.show {
     max-width: 1170px;
-    margin: auto;
 }
 
 .active {
-    width: 100%;
+    width: 600px;
     position: fixed;
     top: 0;
     padding-top: 30px;
     transition: 0.3s linear;
-    z-index: 1;
+    z-index: 2;
     background-color: #16151a5b;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(5px);
+      
 }
 
 .hidden{
@@ -48,8 +48,7 @@
     top:-500px;
     background-size: contain;
     background-image: url('../images/Glow-2.svg');
-    z-index: 2;
-    
+    z-index: 2; 
 }
 
 .logo-glow {
@@ -98,7 +97,7 @@
 
 
 @media (max-width: 1024px) {
-    .show {
+    .svg-container {
         max-width: 600px;
     }
     .svg-left {
@@ -122,8 +121,13 @@
     }
    
     .active {
-        position: unset;
+        position: static;
         margin-top: 20px;
+        background-color: transparent;
+    }
+
+    .hidden {
+        display: none;
     }
     .nav-list {
         width: 100%;
@@ -135,13 +139,8 @@
 @media (max-width: 768px) {
 
     .active {
-        position: static;
         padding-top: 10px;
         transition: none;
-    }
-
-    .hidden {
-        display: none;
     }
 
     .svg-left {
@@ -159,7 +158,8 @@
 @media (max-width: 576px) {
     .svg-container, 
     .hidden, 
-    .active {
+    .active,
+    .glow-images {
         display: none;
     }
     .mobile-menu {

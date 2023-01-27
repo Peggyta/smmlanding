@@ -189,4 +189,9 @@
   .features-description {
    width: 90%;
    }  
+   .glow-area-one {
+      width: 300px;
+      height: 300px;
+      top: -127px;
+   }
 }

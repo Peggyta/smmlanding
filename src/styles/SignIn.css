@@ -6,7 +6,7 @@
 .scroll-section {
     gap: 3px;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .scroll-img, .scroll-text {
@@ -51,7 +51,7 @@
     color: var(--silver);
 }
 .sign-title span {
-    color: var(--pink);
+    color: var(--rosewood);
 }
 .sign-mobile-form {
     display: none;

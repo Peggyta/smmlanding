@@ -1,0 +1,201 @@
+.mobile-begin {
+    max-width: 600px;
+    margin: 185px auto auto auto;
+}
+
+@media (min-width: 769px) {
+    .mobile-begin {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .mobile-begin-title {
+        margin-bottom: 42px;
+        position: relative;
+    }
+
+    .glow-area-three {
+        background-image: url('../images/Glow\ 3.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        bottom: -270px;
+        
+    }
+
+    .mobile-begin-title h2 {
+        font-weight: 300;
+        font-size: 48px;
+        color: var(--silver);
+        text-align: center;
+    }
+    .mobile-begin-title span {
+        color: var(--rosewood);    
+    }
+
+    .mobile-begin-titles {
+        color: var(--silver);
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 34px;
+    }
+
+    .mobile-begin-card {
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        margin-bottom: 7px;
+        position: relative;
+    }
+    .mobile-begin-t-box {
+        width: 300px;
+        padding-top: 35px;
+        padding-bottom: 18px;
+        padding-inline: 20px;
+        border-radius: 30px 45px 17px 30px;
+        position: relative; 
+    }
+   
+    .mobile-begin-t-box.one {
+        background-color: #5c4642;
+    }
+    .mobile-begin-t-box.two {
+        background-color: #4c3c3a;
+    }
+    .mobile-begin-t-box.three {
+        background-color: #3b3032;
+    }
+    .mobile-begin-t-box.four {
+        background-color: #2b252a;
+    }
+
+    .down-logo {
+        position: absolute;
+        z-index: 1;
+        transform: rotate(90deg);
+        bottom: -15px;
+    }
+
+    .down-logo.one {
+        filter: brightness(1.7);
+    }
+
+    .down-logo.two {
+        filter: brightness(1.3);
+    }
+
+    .card-number {
+        display: inline;
+        font: 300 40px 'Roboto', sans-serif;
+    }
+
+    .card-number.one {
+        color: #b3837d;
+    }
+    .card-number.two {
+        color: #99706b;
+    }
+    .card-number.three {
+        color: #805e59;
+    }
+    .card-number.four {
+        color: #664b47;
+    }
+    .mobile-begin-text {
+        color: var(--cement);
+        font-size: 16px;
+        background-color: #1b1a22;
+        width: calc(100% - 250px);
+        padding-inline-start: 60px ;
+        padding-top: 22px;
+        padding-bottom: 25px;
+        border-radius: 0 45px 17px 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;   
+    }
+    .mobile-begin-text p {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mobile-begin {
+        max-width: auto;
+        width: max-content;  
+    }
+    
+    .glow-area-three {
+        width: 350px;
+        height: 350px;
+        bottom: -160px;
+    }
+   .mobile-begin-card {
+    width: auto;
+   }
+    .mobile-begin-t-box {
+        width: 200px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-inline: 10px;
+        border-radius: 30px 45px 17px 30px; 
+        margin-inline: 0;
+    }
+    .mobile-begin-titles {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 17px; 
+        width: max-content; 
+    }
+    .mobile-begin-text {
+        font-size: 14px;
+        width: 250px;
+        height: 107px;
+        line-height: 20px;
+        padding-inline-start: 0 ;
+        padding-top: 0;
+        padding-bottom:unset;     
+    }
+   
+    .mobile-begin-text p {
+        margin-inline-start: 90px;
+        width: auto;   
+    }
+    
+    .card-number {
+        font: 300 26px 'Roboto', sans-serif;
+    }
+    .down-logo {
+        left: 20px;
+        bottom: -13px;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .mobile-begin {
+        max-width: 320px;
+        width: 100%;
+    }
+    
+    .glow-area-three {
+        width: 250px;
+        height: 250px;
+        bottom: -86px;
+        left: 50px;
+    }
+    .mobile-begin-text {
+        width: 191px;    
+    }
+    .mobile-begin-text p {
+        margin-inline-start: 60px;   
+    }
+    .mobile-begin-t-box {
+        width: 183px;
+    }
+    .mobile-begin-titles {
+        font-size: 15.5px;  
+    }
+}
