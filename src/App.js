@@ -5,6 +5,8 @@ import SignIn from './components/SignIn';
 import Features from './components/Features';
 import Begin from './components/Begin';
 import MobileBegin from './components/MobileBegin';
+import Slider from './components/Slider';
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <Features />
       <Begin />
       <MobileBegin />
+      <Slider />
     </div>
   );
 }

@@ -13,7 +13,7 @@
     top: 0;
     padding-top: 30px;
     transition: 0.3s linear;
-    z-index: 2;
+    z-index: 5;
     background-color: #16151a5b;
     backdrop-filter: blur(5px);
       
