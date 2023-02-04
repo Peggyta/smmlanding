@@ -73,6 +73,11 @@
     color: var(--light-grey);
 }
 
+.nav:hover {
+    color: var(--pink);
+    transition: all .2s ease-in;
+}
+
 .nav-link-one {
     padding-right: 46px;
 }

@@ -117,7 +117,7 @@
         z-index: -1;   
     }
     .mobile-begin-text p {
-        margin-top: 20px;
+        margin-top: 17px;
     }
 }
 
@@ -176,7 +176,7 @@
 
 @media (min-width: 320px) and (max-width: 575px) {
     .mobile-begin {
-        max-width: 320px;
+        max-width: 340px;
         width: 100%;
     }
     
@@ -187,10 +187,10 @@
         left: 50px;
     }
     .mobile-begin-text {
-        width: 191px;    
+        width: 200px;    
     }
     .mobile-begin-text p {
-        margin-inline-start: 60px;   
+        margin-inline-start: 55px;   
     }
     .mobile-begin-t-box {
         width: 183px;

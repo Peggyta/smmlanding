@@ -123,6 +123,12 @@ input[type=checkbox] {
     border-radius: 40px;
     background-color: rgba(188, 137, 113, 0.1);
 }
+
+.sign-btn:hover {
+    color: var(--pink);
+    background-color: rgba(180, 88, 60, 0.692);
+    transition: all .2s ease-in;
+}
 .checkbox-container {
     width: fit-content;
 }

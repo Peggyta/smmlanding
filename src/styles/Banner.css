@@ -75,6 +75,12 @@
     margin-left: 135px;
 }
 
+.services-btn a:hover {
+    color: var(--pink);
+    background-color: rgba(180, 88, 60, 0.692);
+    transition: all .2s ease-in;
+}
+
 .logo-btn {
     padding-right: 10px;
 }
