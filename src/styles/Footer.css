@@ -1,0 +1,37 @@
+.footer-section {
+    width: auto;
+    text-align: center;
+    color: var(--cement);
+    margin: 129px auto 34px auto;
+    line-height: 15px;
+    font-weight: 300;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+.footer-text a {
+    color: var(--rosewood);
+    text-decoration: none;
+}
+
+.designer {
+    font-size: 12px;
+}
+
+.designer span {
+    color: var(--silver);
+}
+
+@media (max-width: 1024px) {
+    .footer-section {     
+      margin-top: 540px;   
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {     
+      margin-top: 190px;   
+    }
+}

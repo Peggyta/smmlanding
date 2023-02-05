@@ -12,7 +12,7 @@
     max-width: 1170px;
     width: 100%;
     margin: auto;
-    margin-top: -500px;
+    margin-top: -440px;
 }
 
 .faq-section {
@@ -70,7 +70,7 @@
     .faq-container {
         max-width: 900px;
         width: auto;
-        margin: auto 20px;
+        margin: -460px 20px;
     }
     .glow-area-five {
         left: 150px;
@@ -94,7 +94,7 @@
         max-width: 600px;
         margin-top: -100px;
         position: relative;
-        margin: auto;    
+        margin: -100px auto;    
     }
     .glow-area-five {
         display: none;
@@ -153,10 +153,16 @@
         justify-content: unset;
         width: 100%;
     }
+
+    .faq-title {
+        margin-top: 120px;
+    }
     .question-img-mobile {
-        width: 300px;
-        height: 300px;
-        left: 130px;
+        display: none;
+    }
+    .question-answer-box a span {
+        font: 300 57px 'Roboto', sans-serif;
+        color: var(--numbers);
     }
     
     .question-answer-box a h3 {
@@ -167,8 +173,8 @@
         width: 250px;
     }
     .question-img-mobile {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         left: 90px;
     }
 }

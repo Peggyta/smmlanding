@@ -42,7 +42,7 @@ const MobileBegin = () => {
                     <p className='mobile-begin-titles'><span className='card-number four'>04</span> Enjoy great results</p>
                 </div>
                 <div className='mobile-begin-text'>
-                        <p className='second-line'>You will be informed once your order is complete. it won't take long.</p>   
+                    <p className='second-line'>You will be informed once your order is complete. it won't take long.</p>   
                 </div>
             </div>
         </div>

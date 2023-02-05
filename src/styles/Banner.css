@@ -14,7 +14,6 @@
 }
 
 .description {
-    font-family: 'Raleway', sans-serif;
     margin-top: 89px;
     width: max-content;
 }
@@ -73,6 +72,9 @@
     border-radius: 40px;
     background-color: rgba(188, 137, 113, 0.1);
     margin-left: 135px;
+    position: relative;
+    z-index: 1;
+    
 }
 
 .services-btn a:hover {

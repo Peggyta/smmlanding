@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
-    margin-top: -20px;
+    margin-top: 0;
 
 }
 
@@ -69,8 +69,8 @@
 
 .carousel-sections {
     width: 1130px;
-    height: 64%;
-    margin: 35px auto;
+    height: 55%;
+    margin: 60px auto;
     background-color: #262023 ;
     display: flex;
     justify-content: space-between;
@@ -80,9 +80,9 @@
     border-radius: 44px;
 }
 .carousel-sec-one {
-   width: 290px;
-   height: 193px;
-   margin-top: -30px;
+   width: 370px;
+   height: 260px;
+   margin-top: -37px;
 }
 
 .carousel .control-dots {
@@ -98,7 +98,7 @@
     width: 22px !important;
     height: 3px !important;
     background:var(--rosewood) !important;
-    margin: 38px 3px!important;
+    margin: 68px 3px!important;
 }
 
 .carousel .control-prev.control-arrow:before {
@@ -111,7 +111,7 @@
 
 .carousel .control-prev.control-arrow {
     left: -26px !important;
-    top: -15px !important; } 
+    top: -22px !important; } 
 
 .carousel .control-next.control-arrow:before {
     border-left: unset !important;
@@ -122,7 +122,7 @@
 
 .carousel .control-next.control-arrow {
     right: -26px !important;
-    top: -15px !important; }
+    top: -22px !important; }
     .carousel.carousel-slider .control-arrow:hover {
         background: unset !important; }
 .carousel-sec-two {
@@ -157,19 +157,20 @@
         height: 180px;
     }
     .carousel-sec-one {
-        width: 460px;
-        margin-top: -66px;
+        width: 480px;
+        margin-top: -50px;
+        height: 225px;
     }
     .glow-area-four {
         left: 210px;  
     }
      .carousel .control-prev.control-arrow {
-        left: 9px !important;
-        top: 5px !important;
+        left: -12px !important;
+        top: 7px !important;
     } 
     .carousel .control-next.control-arrow {
-        right: 9px !important;
-        top: 5px !important;
+        right: -12px !important;
+        top: 7px !important;
     }
     .carousel .control-dots .dot {
         margin: 8px 3px!important;

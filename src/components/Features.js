@@ -6,8 +6,8 @@ const Features = () => {
         <div className='w-100'>
             <div className='features-container'>
                 <div className='glow-area-one'></div>
-                <div className='features-title'><h2>Why <span className='span-one'>SMM</span>
-                <span className='span-two'>?</span>
+                    <div className='features-title'><h2>Why <span className='span-one'>SMM</span>
+                        <span className='span-two'>?</span>
                 </h2></div>     
                 <div>
                     <div className='ring-svg'>

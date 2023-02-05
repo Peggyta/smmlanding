@@ -7,6 +7,7 @@ import Begin from './components/Begin';
 import MobileBegin from './components/MobileBegin';
 import Slider from './components/Slider';
 import Faq from './components/Faq';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <MobileBegin />
       <Slider />
       <Faq />
+      <Footer />
     </div>
   );
 }

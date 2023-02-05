@@ -10,7 +10,7 @@ body {
 }
 
 :root {
-  --rosewood: #bd8971;
+  --rosewood: #bc8971;
   --pink: #ffb898;
   --silver: #e6e6e6;
   --darksilver: #e5e5e5;
@@ -22,7 +22,6 @@ body {
   --body: #16151a;
   --shadow: #1e1c25;
   --darkpink: #262023;
-  --mocha: #bc8971;
   --lightMocha: rgba(188, 137, 113, 0.1);
   --cocoa: #7c5c50;
   --chocolate: #644c43;
