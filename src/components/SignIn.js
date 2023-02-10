@@ -67,7 +67,7 @@ const SignIn = () => {
                                         <input type='checkbox' />
                                         <span className='slider round'></span>
                                     </label>
-                                    <lable className='remember-link-mobile'>Remember me</lable>
+                                    <label className='remember-link-mobile'>Remember me</label>
                                 </div>
                                 <div className='pass-link-mobile'><a className='text-decoration-none' href='#'>Forgot password?</a></div>
                             </div>
