@@ -9,7 +9,7 @@ const SignIn = () => {
         password: "",
     });
     const[entered, setEntered] = useState({});
-    const [errors, setErrors] = useState({});
+    const [error, setErrors] = useState({});
 
     useEffect(()=> {
         setErrors(data)
@@ -47,12 +47,12 @@ const SignIn = () => {
                                 <div className='input-box'>
                                     <input className='input-field' type='text' name='userName' 
                                     value={data.userName} placeholder='Username' onChange={changeHandler} />
-                                    {errors.userName && entered.userName && <span>{errors.userName}</span>}
+                                    {error.userName && entered.userName && <span>{error.userName}</span>}
                                 </div>
                                 <div className='input-box'>
                                     <input className='input-field' type='password' name='password'
                                     value={data.password} placeholder='Password' onChange={changeHandler} />
-                                    {errors.password && entered.password && <span>{errors.password}</span>}
+                                    {error.password && entered.password && <span>{error.password}</span>}
                                         <img className='input-icon-hide' src={eyelid} alt='hide password' />
                                 </div>
                             </div>   

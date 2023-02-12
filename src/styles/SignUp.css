@@ -1,0 +1,103 @@
+.signUp-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUp {
+    background-color: var(--elephant);
+    height: fit-content;
+    width: fit-content;
+    padding:50px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 23px 0  rgba(230, 215, 208, 0.1);
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+   width: 300px;
+    height: 80px;
+}
+
+.signUp-form-text {
+    margin-top: -10px;
+    font: 300 16px 'Raleway', sans-serif;
+    color: var(--grey);
+}
+
+.form-section label {
+    font-size: 14px;
+    color: var(--silver);
+}
+.form-section input {
+    border: 1px solid var(--ash);
+    border-radius: 12px; 
+    background-color: rgba(41, 41, 48, 0.362);
+    padding: 5px;
+}
+.form-section input::placeholder {
+     padding-left: 10px;
+     color: var(--ash);
+     font-size: 14px;
+}
+
+.form-section input:focus {
+    outline: none;
+    color: var(--pink);
+    background-color: var(--shadow);
+    transition: all .2s ease-in;
+    padding-left: 10px;
+}
+
+.form-titles {
+    text-align: center;
+}
+
+.accept-rules {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.accept-box {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.accept-text {
+    color: var(--silver);
+    font-size: 12px;
+}
+
+.submit-button {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.submit-button input {
+    width: 100%;
+    color: var(--rosewood);
+    background-color: rgba(188, 137, 113, 0.1);
+    border: 1px solid var(--rosewood);
+    border-radius: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.err-msg,
+.err-terms {
+    color: var(--rosewood);
+    font-size: 11px;
+}
+
+.err-terms {
+    display: block;
+    line-height: 6px;
+}
