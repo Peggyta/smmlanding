@@ -198,11 +198,11 @@
         width: 40px;
     }
     .show-mobile-menu {
-        background-color: var(--elephant);
-        width: 100%;
+        background-color: var(--ash);
+        width: 90%;
         height: 100vh;
         top: -35px;
-        right: -35px;
+        right: -42px;
         position: absolute;
         z-index: 2;
     }

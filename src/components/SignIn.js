@@ -1,27 +1,16 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Controller, useForm } from 'react-hook-form';
 import logoScroll from '../images/logo-Icon.png';
 import eyelid from '../images/eye.png';
 import '../styles/SignIn.css';
 
 const SignIn = () => {
-    const[data, setData] = useState ({
-        userName: "",
-        password: "",
+    const{register, handleSubmit, control} = useForm({
+        email: '',
+        password: ''
     });
-    const[entered, setEntered] = useState({});
-    const [error, setErrors] = useState({});
-
-    useEffect(()=> {
-        setErrors(data)
-    },[data,entered]);
-
-    const changeHandler = event => {
-        if(event.target.name === "isAccepted") {
-            setData({...data,[event.target.name]: event.target.checked})
-        } else {
-            setData({...data,[event.target.name]: event.target.value})
-        }
-    }
+    const onError = (errors, e) => (console.log(errors, e));
    
     return (
         <div className='w-100'>
@@ -42,23 +31,21 @@ const SignIn = () => {
                             <p className='sign-form-items'>your desired social media accounts. Facebook, Telegram, instagram, Youtube, Tiktok, Twitter, etc... </p>
                             <p className='sign-mobile-form'>Sign in to access or sign up to create your panel</p>
                         </div>
-                        <div className='input-container d-flex'>
+                        <form onSubmit={handleSubmit((data) => console.log(data), onError)} className='input-container d-flex'>
                             <div className='input-boxes d-flex gap-2'>
                                 <div className='input-box'>
-                                    <input className='input-field' type='text' name='userName' 
-                                    value={data.userName} placeholder='Username' onChange={changeHandler} />
-                                    {error.userName && entered.userName && <span>{error.userName}</span>}
+                                    <input className='input-field' type='text' name='email' 
+                                     placeholder='Username' {...register('email',{required: true})} /> 
                                 </div>
                                 <div className='input-box'>
                                     <input className='input-field' type='password' name='password'
-                                    value={data.password} placeholder='Password' onChange={changeHandler} />
-                                    {error.password && entered.password && <span>{error.password}</span>}
+                                     placeholder='Password' {...register ('password', {required:true})} />
                                         <img className='input-icon-hide' src={eyelid} alt='hide password' />
                                 </div>
                             </div>   
                         <div className='checkbox-container d-flex'>
                             <div className='checkbox-items'>
-                                    <input type='checkbox'/>
+                                    <input type='checkbox' />
                                     <label className='remember-text'>Remember me</label>  
                             </div>
                             <div className='checkbox-items-mobile'>
@@ -72,15 +59,15 @@ const SignIn = () => {
                                 <div className='pass-link-mobile'><a className='text-decoration-none' href='#'>Forgot password?</a></div>
                             </div>
                             <div className='sign-btn-section'>
-                                <a className=' sign-btn text-decoration-none btn' href='#'>
+                                <button className=' sign-btn text-decoration-none btn' type='submit'>
                                     <img src={logoScroll} alt='icon' />Sign in
-                                </a>
+                                </button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                     <div className='sign-pass-link d-flex'>
                         <div className='sign-pass-text'>
-                            <p><a className='text-decoration-none' href='#'>Sign Up</a> for new account</p>
+                            <p><NavLink className='text-decoration-none' to='/signup'>Sign Up</NavLink> for new account</p>
                         </div>
                         <div className='sign-pass-text' id='forgot-pass'>
                             <p><a className='text-decoration-none' href='#'>Forgot password?</a> click to recover</p>

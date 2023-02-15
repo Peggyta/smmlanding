@@ -9,6 +9,7 @@ import {
 import './index.css';
 import App from './App';
 import SignUp from './components/SignUp';
+import Login from './components/Login';
 //Fonts
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: "signup",
         element: <SignUp />
+    },
+    {
+      path: "login",
+      element: <Login />
     },
 
   ]);

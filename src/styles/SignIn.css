@@ -298,7 +298,9 @@ input[type=checkbox]:checked {
     position: relative;
     display: inline-block;
     width: 52px;
-    height: 34px;
+    height: 32px;
+    border: 1px solid var(--ash);
+    border-radius: 35px;
   }
   
   /* Hide default HTML checkbox */
@@ -327,7 +329,7 @@ input[type=checkbox]:checked {
     height: 26px;
     width: 26px;
     left: 4px;
-    bottom: 4px;
+    bottom: 2px;
     background-color: var(--pink);
     -webkit-transition: .4s;
     transition: .4s;

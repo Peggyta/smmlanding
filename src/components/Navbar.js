@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className='svg-container'>
             <div className={show ? 'active': 'hidden'}>
                 <ul className='nav-list d-flex justify-content-center align-items-center list-unstyled position-relative z-index-1  '>
-                        <li><Link to='/signin' className='nav nav-link-one text-decoration-none'>Sign in</Link></li>
+                        <li><Link to='/login' className='nav nav-link-one text-decoration-none'>Sign in</Link></li>
                         <li><Link to='/signup' className='nav nav-link-two text-decoration-none'>Sign up</Link></li>
                         <div className='logo-container position-relative'>
                             <Link to='/'><img src={logo} alt="logo" /></Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
                     <div>
                         <img className={sideBar && 'mobile-icon' } src={hamburMenu} alt='hambur-menu' />
                         <ul className= {sideBar ? 'mobile-list-links' : 'hide-list-links'}>
-                            <li><NavLink to='/signin' className='nav' >Sign in</NavLink></li>
+                            <li><NavLink to='/login' className='nav' >Sign in</NavLink></li>
                             <li><NavLink to='/signup' className='nav'>Sign up</NavLink></li>
                             <li><NavLink to='/api' className='nav'>API</NavLink></li>
                             <li><NavLink to='/services' className='nav'>Services</NavLink></li>

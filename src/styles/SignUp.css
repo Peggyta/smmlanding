@@ -1,5 +1,5 @@
 .signUp-form {
-    height: 100vh;
+    height: 950px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
     background-color: var(--elephant);
     height: fit-content;
     width: fit-content;
-    padding:50px;
+    padding: 30px 50px;
     border-radius: 20px;
     box-shadow: 1px 1px 23px 0  rgba(230, 215, 208, 0.1);
 }
@@ -73,6 +73,23 @@
     font-size: 12px;
 }
 
+.toggle-smm-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-smm-section div a {
+    text-decoration: none;
+    color: var(--rosewood);
+}
+.toggle-smm-land {
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
 .submit-button {
     width: 100%;
    display: flex;
@@ -81,7 +98,7 @@
    margin-top: 10px;
 }
 
-.submit-button input {
+.submit-button button {
     width: 100%;
     color: var(--rosewood);
     background-color: rgba(188, 137, 113, 0.1);
@@ -89,6 +106,13 @@
     border-radius: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.submit-button:hover {
+    color: var(--pink);
+    background-color: rgba(180, 88, 60, 0.301);
+    transition: all .2s ease-in;
+    border-radius: 40px;
 }
 
 .err-msg,
@@ -101,3 +125,20 @@
     display: block;
     line-height: 6px;
 }
+
+.login-text {
+    color: var(--grey);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link {
+    display: inline;
+    color: var(--rosewood);
+    text-decoration: none;
+}
+
+.login-link:hover {
+    color: var(--pink);
+}
+
