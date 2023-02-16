@@ -1,15 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import { Controller, useForm } from 'react-hook-form';
 import Navbar from './Navbar';
+import { Icon } from 'react-icons-kit';
+import { eye } from 'react-icons-kit/feather/eye';
+import { eyeOff } from 'react-icons-kit/feather/eyeOff';
 import '../styles/SignUp.css';
 import Toggle from './Toggle';
 
 const Login = () => {
+    const [type, setType] = useState('password');
+    const [icon, setIcon] = useState(eye);
     const {register, handleSubmit, formState: {errors}, control}= useForm({
         email: '',
         password: ''
     });
+
+    const passwordHandle = () => {
+        if(type==='password') {
+            setType('text')
+            setIcon(eye)
+        } else { 
+            setType('password')
+            setIcon(eyeOff)
+        }
+    }
     return (
     <>
         <Navbar />
@@ -30,10 +45,11 @@ const Login = () => {
                 <div className='form-section'>
                     <label>Password</label>
                     <input
-                    name='password' type='password'
+                    name='password' type={type}
                     placeholder='enter password'
                     {...register('password', {required: true})} />
                     {errors.password && <p className='err-msg'>Enter your password</p>}
+                    <span onClick={passwordHandle} className='eye-icon'><Icon icon={icon} size={22} /></span>
                 </div>
                 <div className='toggle-smm-section'>
                     {/* <div className='toggle-smm-land'>

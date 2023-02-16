@@ -80,10 +80,11 @@
 
 .input-field {
     width: 100%;
-    padding: 18px 0 14px 0 ;
+    padding: 18px 0 14px 20px ;
     background-color: var(--elephant);
     border-radius: 40px;
     border: 1px solid var(--ash);
+    color: var(--pink);
 }
 
 .input-field::placeholder {
@@ -99,8 +100,9 @@
 
 .input-icon-hide {
     position: absolute;
-    right: 34px;
-    top: 18px
+    right: 25px;
+    top: 16px;
+    cursor: pointer;
 }
 
 input[type=checkbox] {
@@ -211,10 +213,7 @@ input[type=checkbox]:checked {
     .input-box {
         width: 100%; 
     }
-    .input-icon-hide {
-        right: 35px;
-        top: 18px
-    }
+    
     .checkbox-container {
         width: 600px;
         justify-content: space-between;
@@ -270,15 +269,7 @@ input[type=checkbox]:checked {
     .input-box {
         width: auto; 
     }
-    .input-icon-hide {
-        right: 160px;
-        top: unset;
-        bottom: -315px;
-    }
-    .input-icon-hide {
-        right: 35px;
-        top: 18px
-    }
+  
     .checkbox-container {
         width: 100%;
         flex-direction: column;
@@ -406,20 +397,21 @@ input[type=checkbox]:checked {
     }
 
     .input-field {
-        padding: 12px 0 ;
+        padding: 16px 0 12px 20px ;
     }
     .input-icon-hide {
-        right: 32px;
+        right: 5px;
         top: 12px
     }
     .switch {
+        width: 45px;
         height: 25px;
     }
     .slider:before {
-        height: 21px;
-        width: 21px;
-        left: 8px;
-        bottom: 2px;
+        height: 24px;
+        width: 24px;
+        left: 0;
+        bottom: 0px;
       }
     .checkbox-items-mobile {
         width: max-content;

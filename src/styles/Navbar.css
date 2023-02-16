@@ -199,10 +199,11 @@
     }
     .show-mobile-menu {
         background-color: var(--ash);
-        width: 90%;
+        width: 80%;
         height: 100vh;
         top: -35px;
-        right: -42px;
+        right: -39px;
+        overflow-x: hidden;
         position: absolute;
         z-index: 2;
     }

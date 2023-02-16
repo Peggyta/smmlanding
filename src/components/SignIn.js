@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Controller, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import logoScroll from '../images/logo-Icon.png';
+import { Icon } from 'react-icons-kit';
+import { eye } from 'react-icons-kit/feather/eye';
+import { eyeOff } from 'react-icons-kit/feather/eyeOff';
 import eyelid from '../images/eye.png';
 import '../styles/SignIn.css';
 
 const SignIn = () => {
-    const{register, handleSubmit, control} = useForm({
+    const[type, setType] = useState('password');
+    const[icon, setIcon] = useState(eyeOff);
+    const{register, handleSubmit} = useForm({
         email: '',
         password: ''
     });
     const onError = (errors, e) => (console.log(errors, e));
-   
+   const passwordHandler = () => {
+    if(type === 'password') {
+        setIcon(eye)
+        setType('text');
+        
+    } else {
+        setIcon(eyeOff);
+        setType('password');
+    }
+   }
     return (
         <div className='w-100'>
             <div className='sign-container'>
@@ -38,9 +52,9 @@ const SignIn = () => {
                                      placeholder='Username' {...register('email',{required: true})} /> 
                                 </div>
                                 <div className='input-box'>
-                                    <input className='input-field' type='password' name='password'
+                                    <input className='input-field' type={type} name='password'
                                      placeholder='Password' {...register ('password', {required:true})} />
-                                        <img className='input-icon-hide' src={eyelid} alt='hide password' />
+                                     <span onClick={passwordHandler} className='input-icon-hide'><Icon icon={icon} size={25}/></span>
                                 </div>
                             </div>   
                         <div className='checkbox-container d-flex'>

@@ -1,6 +1,7 @@
 .signUp-form {
     height: 950px;
     display: flex;
+    margin: auto;
     justify-content: center;
     align-items: center;
 }
@@ -17,8 +18,9 @@
 .form-section {
     display: flex;
     flex-direction: column;
-   width: 300px;
+    width: 300px;
     height: 80px;
+    position: relative;
 }
 
 .signUp-form-text {
@@ -35,7 +37,8 @@
     border: 1px solid var(--ash);
     border-radius: 12px; 
     background-color: rgba(41, 41, 48, 0.362);
-    padding: 5px;
+    padding: 5px 10px;
+    color: var(--pink);
 }
 .form-section input::placeholder {
      padding-left: 10px;
@@ -142,3 +145,27 @@
     color: var(--pink);
 }
 
+.eye-icon {
+    position: absolute;
+    cursor: pointer;
+    top:26px;
+    right: 15px;
+    color: var(--grey);
+}
+
+@media (max-width: 576px) {
+    .signUp-form {
+        width: 300px;
+        height: 800px;
+    }
+    .signUp {
+        background-color: unset;
+        padding: 30px unset;
+        border-radius: unset;
+        box-shadow: unset;
+    }
+
+    .submit-button {
+       margin-top: 20px;
+    }
+}

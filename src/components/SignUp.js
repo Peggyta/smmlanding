@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import {useForm} from 'react-hook-form';
+import { Icon } from 'react-icons-kit';
+import { eye } from 'react-icons-kit/feather/eye';
+import { eyeOff } from 'react-icons-kit/feather/eyeOff';
 import Navbar from './Navbar';
 import '../styles/SignUp.css';
 
 const SignUp = () => {
+    const[icon, setIcon] = useState(eye);
+    const[showIcon, setShowIcon] = useState(eye);
+    const[type, setType] = useState('password');
+    const[confirmType, setConfirmType] = useState('password');
     const{
         register, 
         handleSubmit,
@@ -19,6 +26,25 @@ const SignUp = () => {
         confirmPaword: '',
         isAccepted: false
     });
+    const showPassword = () => {
+        if(type==='password') {
+            setType('text')
+            setIcon(eye)
+        } else {
+            setType('password')
+            setIcon(eyeOff)
+        }
+    };
+
+    const showConfirmPassword = () => {
+        if(confirmType==='password') {
+            setConfirmType('text')
+            setShowIcon(eye)
+        } else {
+            setConfirmType('password')
+            setShowIcon(eyeOff)
+        }
+    };
     const onError = (errors,e) => console.log(errors, e);
     return (
     <>
@@ -48,19 +74,21 @@ const SignUp = () => {
                 <div className='form-section'>
                     <label>Password</label>
                     <input 
-                    name='password' type='password'
+                    name='password' type={type}
                     placeholder='enter password'
                     {...register('password', {required:true, minLength: 8})} />
                     {errors.password && <p className='err-msg'>Password must be at least 8 characters long</p>}
+                    <span className='eye-icon' onClick={showPassword}><Icon icon={icon} size={22} /></span>
                 </div>
                 <div className='form-section'>
                     <label>Confirm Password</label>
                     <input 
-                    name='confirmPassword' type='password'
+                    name='confirmPassword' type={confirmType}
                     placeholder='confirm password'
                     {...register('confirmPassword', {required:true, minLength: 8})} />
                     {watch('confirmPassword') !== watch('password') 
                     && getValues('confirmPassword') ? <p className='err-msg'>Password doesn't match</p> : null}
+                    <span className='eye-icon' onClick={showConfirmPassword}><Icon icon={showIcon} size={22} /></span>
                 </div>
                 <div className='accept-rules'>
                     <div className='accept-box'>
