@@ -102,10 +102,10 @@ const SignUp = () => {
                     </div> 
                 </div>
                 <div className='submit-button'>
-                    <button type='submit'>Sign in </button>
+                    <button type='submit'>Sign up </button>
                 </div>
                 <div className='login-text'>
-                    <p>Already have an account? <NavLink to='/login' className='login-link'>Sign up</NavLink></p>
+                    <p>Already have an account? <NavLink to='/login' className='login-link'>Sign in</NavLink></p>
                 </div>
             </form>
         </div>
