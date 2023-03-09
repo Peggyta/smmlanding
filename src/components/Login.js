@@ -10,7 +10,7 @@ import Toggle from './Toggle';
 
 const Login = () => {
     const [type, setType] = useState('password');
-    const [icon, setIcon] = useState(eye);
+    const [icon, setIcon] = useState(eyeOff);
     const {register, handleSubmit, formState: {errors}, control}= useForm({
         email: '',
         password: ''

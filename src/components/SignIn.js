@@ -5,7 +5,6 @@ import logoScroll from '../images/logo-Icon.png';
 import { Icon } from 'react-icons-kit';
 import { eye } from 'react-icons-kit/feather/eye';
 import { eyeOff } from 'react-icons-kit/feather/eyeOff';
-import eyelid from '../images/eye.png';
 import '../styles/SignIn.css';
 
 const SignIn = () => {

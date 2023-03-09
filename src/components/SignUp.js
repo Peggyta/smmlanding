@@ -8,8 +8,8 @@ import Navbar from './Navbar';
 import '../styles/SignUp.css';
 
 const SignUp = () => {
-    const[icon, setIcon] = useState(eye);
-    const[showIcon, setShowIcon] = useState(eye);
+    const[icon, setIcon] = useState(eyeOff);
+    const[showIcon, setShowIcon] = useState(eyeOff);
     const[type, setType] = useState('password');
     const[confirmType, setConfirmType] = useState('password');
     const{
@@ -28,11 +28,11 @@ const SignUp = () => {
     });
     const showPassword = () => {
         if(type==='password') {
-            setType('text')
             setIcon(eye)
+            setType('text')
         } else {
-            setType('password')
             setIcon(eyeOff)
+            setType('password')
         }
     };
 
@@ -105,7 +105,7 @@ const SignUp = () => {
                     <button type='submit'>Sign in </button>
                 </div>
                 <div className='login-text'>
-                    <p>Already have an account? <NavLink to='/login' className='login-link'>Sign in</NavLink></p>
+                    <p>Already have an account? <NavLink to='/login' className='login-link'>Sign up</NavLink></p>
                 </div>
             </form>
         </div>

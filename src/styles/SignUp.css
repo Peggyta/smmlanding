@@ -107,8 +107,8 @@
     background-color: rgba(188, 137, 113, 0.1);
     border: 1px solid var(--rosewood);
     border-radius: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .submit-button:hover {

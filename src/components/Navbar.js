@@ -63,7 +63,7 @@ const Navbar = () => {
                     </a>  
                 </div>
                 <div>
-                    <a href='#'>
+                    <a href='/'>
                         <img src={logo} alt='logo' />
                     </a>    
                 </div>
