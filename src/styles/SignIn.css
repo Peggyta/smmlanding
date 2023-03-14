@@ -389,6 +389,12 @@ input[type=checkbox]:checked {
     .sign-mobile-form {
         font: 300 18px 'Raleway', sans-serif; 
     }
+
+    .sign-form {
+        padding-left: none;
+        padding-inline: 59px;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 493px) {
@@ -399,11 +405,7 @@ input[type=checkbox]:checked {
         font: 300 16px 'Raleway', sans-serif; 
     }
 
-    .sign-form {
-        padding-left: none;
-        padding-inline: 59px;
-    }
-
+    
     .input-field {
         padding: 16px 0 12px 20px ;
     }
