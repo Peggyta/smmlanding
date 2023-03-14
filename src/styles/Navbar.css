@@ -101,7 +101,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1040px) {
     .svg-container {
         max-width: 600px;
     }

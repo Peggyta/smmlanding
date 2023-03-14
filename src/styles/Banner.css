@@ -1,12 +1,21 @@
 .banner-container {
     width: auto;
     max-width: 1170px;
-    margin: 170px auto 0 auto;
+    margin: 170px auto 0 auto;   
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
 }
 
 .img-container {
     width: 570px;
     height: 713px;
+}
+
+.img-container img {
+    width: 500px;
 }
 
 .mobile-bg-responsive, .mobile-bg-responsive{
@@ -15,7 +24,7 @@
 
 .description {
     margin-top: 89px;
-    width: max-content;
+    width: 100%;
 }
 
 .description h1 {
@@ -43,6 +52,7 @@
 
 .smm-text {
     margin-top: 13px;
+    width: max-content;
 }
 
 .services {
@@ -87,16 +97,18 @@
     padding-right: 10px;
 }
 
-/*Responsive*/
-@media (max-width: 1024px) {
+/* Responsive*/
+@media (max-width: 1040px) {
     .banner-container {
         max-width: 750px;
-        margin: 30px auto;
+        width:auto;
+        margin: 40px auto;
         background-image: url('../images/Mobile-image.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right; 
     }
+    
     .description {
         margin-top: 50px;
     }

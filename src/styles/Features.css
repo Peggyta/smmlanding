@@ -88,7 +88,7 @@
     color: var(--cement);
  }
 
-@media (max-width: 1024px) {
+@media (max-width: 1040px) {
    .features-container {
       max-width: 600px;
       margin-top: 200px;

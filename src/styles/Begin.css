@@ -176,7 +176,8 @@
     z-index: 1;
     position: absolute; 
     left: 68%;
-    width: 375px;
+    /* width: 375px; */
+    width: 32%;
     padding-inline-start: 60px;
 }
  /*responsive*/

@@ -36,7 +36,8 @@
 
 .sign-form {
     margin-top: 190px;
-    padding-inline: 59px;
+    /* padding-inline: 59px; */
+    padding-left:59px;
 }
 
 .sign-form-items {
@@ -58,7 +59,7 @@
 }
 
 .input-container {
-    width: 1100px;
+    width: auto;
     margin-top: 50px;
     align-items: center;
     justify-content: space-between;
@@ -66,7 +67,7 @@
 }
 
 .input-box {
-    width: 370px; 
+    width: 300px; 
     height: 70px;
     position: relative;
 }
@@ -127,7 +128,7 @@ input[type=checkbox]:checked {
     font: 500 24px 'Raleway', sans-serif;
     color: var(--rosewood);
     border: 1px solid var(--rosewood);
-    padding: 15px 40px;
+    padding: 15px 30px;
     border-radius: 40px;
     background-color: rgba(188, 137, 113, 0.1);
 }
@@ -175,7 +176,7 @@ input[type=checkbox]:checked {
 /*Responsive*/
 @media (max-width: 1024px) {
     .sign-container {
-        max-width: 750px;
+        max-width: 730px;
         margin: -110px auto;
     }
 
@@ -211,22 +212,24 @@ input[type=checkbox]:checked {
         width: 100%;
     }
     .input-box {
-        width: 100%; 
+        width: 90%; 
     }
     
     .checkbox-container {
-        width: 600px;
-        justify-content: space-between;
+        width: auto;
+        justify-content: space-between;     
+        
     }
    
    .sign-btn {
-    padding: 15px 160px;
+    padding: 15px 140px;
     }
     .sign-pass-link {
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 100px;
     }
     .sign-pass-text{
-        width: 100%;
+        width: auto;
         font: 400 18px 'Raleway', sans-serif;
     }
     .recover-pass {
@@ -396,6 +399,11 @@ input[type=checkbox]:checked {
         font: 300 16px 'Raleway', sans-serif; 
     }
 
+    .sign-form {
+        padding-left: none;
+        padding-inline: 59px;
+    }
+
     .input-field {
         padding: 16px 0 12px 20px ;
     }
@@ -416,7 +424,7 @@ input[type=checkbox]:checked {
     .checkbox-items-mobile {
         width: max-content;
         flex-direction: column;
-        gap:10px;
+        gap: 10px;
     }
     .remember-link-mobile,
     .pass-link-mobile {
