@@ -30,6 +30,12 @@
     }
 }
 
+@media (min-width: 770px) and (max-width: 808px) {
+    .footer-section {     
+      margin-top: 190px;   
+    }
+}
+
 @media (max-width: 768px) {
     .footer-section {     
       margin-top: 190px;   

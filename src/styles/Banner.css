@@ -101,7 +101,7 @@
 @media (max-width: 1040px) {
     .banner-container {
         max-width: 750px;
-        width:auto;
+        width: auto;
         margin: 40px auto;
         background-image: url('../images/Mobile-image.png');
         background-repeat: no-repeat;
@@ -141,6 +141,9 @@
         width: 100%;
         margin-left: 0;
     }
+    .img-container {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -154,11 +157,10 @@
         padding-inline: 60px; 
         width: 100%; 
     }
-    .img-container {
-        display: none;
-    }
+    
     .description {
         z-index: 1;
+        width: auto;
     }
     .description h1 {
         font-size: 38px;
@@ -169,10 +171,11 @@
     }
     .services {
         justify-content: space-around;
+        width: auto;
     }
 
     .services-btn {
-        width: 100%;
+        width: auto;
     }
     
     .services-text {
@@ -189,11 +192,13 @@
         background-position-x: 85px;
     }
     .banner {
-        width: 100%;
+        /* width: 100%; */
+        width: auto;
        
     }
     .description {
-        width: 290px;
+        width: auto;
+        /* width: 290px; */
     }
     .description h1 {
         width: 300px;

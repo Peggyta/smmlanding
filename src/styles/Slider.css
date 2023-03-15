@@ -152,6 +152,10 @@
 
 /*responsive*/
 @media (max-width: 1024px) {
+    .carousel-container {
+        width: 100%;
+        margin: 100px auto 0 auto;
+    }
     .carousel-sections {
         width: 900px;
         height: 180px;
@@ -162,7 +166,10 @@
         height: 225px;
     }
     .glow-area-four {
-        left: 210px;  
+        width: 400px;
+        height: 400px;
+        left: 210px;
+        top: -140px;  
     }
      .carousel .control-prev.control-arrow {
         left: -12px !important;
@@ -223,7 +230,7 @@
 }
 @media (max-width: 576px) {
     .carousel-sections {
-        width: 500px;
+        width: auto;
     }
     
     .carousel-title-container {
@@ -242,7 +249,7 @@
         width: unset;
     }
     .carousel-title-container p {
-        width: 500px;
+        width: auto;
         text-align: center;
     }
 }

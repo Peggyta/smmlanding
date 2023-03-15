@@ -146,12 +146,15 @@
     .active {
         padding-top: 10px;
         transition: none;
+        width: auto;
     }
+
 
     .svg-left {
         height: 550px;
         width: 550px;
         background-position-x: -260px;
+        
     }
     
     .nav-container {
@@ -186,13 +189,13 @@
     }
     .mobile-svg {
         background-image: url('../images/Glow\ 3.svg');
-        width: 100vw;
-        height: 100vh;
+        width: 300px;
+        height: 300px;
         background-repeat: no-repeat;
-        background-position: 0 -80px ;
+        background-position: 0 -10px ;
         background-size: contain;
-        top: -170px;
-        left: 0; 
+        top: -110px;
+        left: 80px;    
     }
     .mobile-icons {
         width: 40px;

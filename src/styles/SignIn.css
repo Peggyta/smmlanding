@@ -36,8 +36,9 @@
 
 .sign-form {
     margin-top: 190px;
-    /* padding-inline: 59px; */
+    /* padding-inline: 20px; */
     padding-left:59px;
+    padding-right: 20px;
 }
 
 .sign-form-items {
@@ -238,6 +239,7 @@ input[type=checkbox]:checked {
 }
 
 @media (max-width: 768px) {
+    
     .sign-container {
         max-width: 600px;
         margin-top:50px;
@@ -246,6 +248,12 @@ input[type=checkbox]:checked {
     .scroll-line {
         position: unset;
         display: none;
+    }
+
+    .sign-form {
+        padding-left: unset;
+        padding-right: unset;
+        padding-inline: 59px;
     }
     .sign-title {
         display: flex;
@@ -388,11 +396,6 @@ input[type=checkbox]:checked {
     }
     .sign-mobile-form {
         font: 300 18px 'Raleway', sans-serif; 
-    }
-
-    .sign-form {
-        padding-left: none;
-        padding-inline: 59px;
     }
 
 }

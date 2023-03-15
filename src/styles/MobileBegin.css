@@ -3,12 +3,12 @@
     margin: 185px auto auto auto;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 780px) {
     .mobile-begin {
         display: none;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     .mobile-begin-title {
         margin-bottom: 42px;
         position: relative;
@@ -18,11 +18,11 @@
         background-image: url('../images/Glow\ 3.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        width: 600px;
-        height: 600px;
+        width: 400px;
+        height: 400px;
         position: absolute;
-        bottom: -270px;
-        
+        bottom: -170px;
+        left: 90px;  
     }
 
     .mobile-begin-title h2 {

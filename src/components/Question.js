@@ -17,8 +17,8 @@ const Question = (props) => {
                     </div>    
                 </a> 
                 <div className={open ? 'answer-box': 'closed-box'}>
-                <p>{open && props.answer}</p>
-            </div>
+                    <p>{open && props.answer}</p>
+                </div>
             </div>
             
         </>
