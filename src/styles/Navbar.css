@@ -153,8 +153,7 @@
     .svg-left {
         height: 550px;
         width: 550px;
-        background-position-x: -260px;
-        
+        background-position-x: -260px; 
     }
     
     .nav-container {
@@ -195,7 +194,7 @@
         background-position: 0 -10px ;
         background-size: contain;
         top: -110px;
-        left: 80px;    
+        left: 90px;    
     }
     .mobile-icons {
         width: 40px;
@@ -209,7 +208,9 @@
         overflow-x: hidden;
         position: absolute;
         z-index: 2;
+        
     }
+
     .mobile-list-links {
         display: flex;
         flex-direction: column;
@@ -240,3 +241,8 @@
     }
 }
 
+@media (min-width: 320px) {
+    .mobile-svg {
+        left: 40px;    
+    }
+}
