@@ -1,6 +1,7 @@
 .mobile-begin {
     max-width: 600px;
     margin: 185px auto auto auto;
+    padding-inline: 10px;
 }
 
 @media (min-width: 780px) {
@@ -123,7 +124,7 @@
 
 @media (max-width: 576px) {
     .mobile-begin {
-        max-width: auto;
+        max-width: 100%;
         width: max-content;  
     }
     
@@ -154,7 +155,7 @@
         width: 250px;
         height: 107px;
         line-height: 20px;
-        padding-inline-start: 0 ;
+        padding-inline-start: 20px ;
         padding-top: 0;
         padding-bottom:unset;     
     }
@@ -176,8 +177,7 @@
 
 @media (min-width: 320px) and (max-width: 575px) {
     .mobile-begin {
-        max-width: 340px;
-        width: 100%;
+        max-width: 340px; 
     }
     
     .glow-area-three {
@@ -187,10 +187,11 @@
         left: 50px;
     }
     .mobile-begin-text {
-        width: 200px;    
+        width: 200px;     
     }
     .mobile-begin-text p {
         margin-inline-start: 55px;   
+       
     }
     .mobile-begin-t-box {
         width: 183px;

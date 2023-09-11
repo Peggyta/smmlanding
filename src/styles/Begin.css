@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+    padding-inline: 10px;
 }
 
 .begin-title-container h2 {
@@ -153,7 +154,7 @@
     z-index: 4;
     width: 318px;
     position: absolute; 
-    left: 0;
+    left: 10px;
 }
 .begin-description-title.two {
     background-color: var(--cocoa);
@@ -175,10 +176,10 @@
     background-color: var(--coffee);
     z-index: 1;
     position: absolute; 
-    left: 68%;
+    left: 67%;
     /* width: 375px; */
     width: 32%;
-    padding-inline-start: 60px;
+    padding-inline-start: 80px;
 }
  /*responsive*/
  @media (max-width: 1024px) {

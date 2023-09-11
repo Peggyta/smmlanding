@@ -21,6 +21,8 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    width:100%;
+    margin:auto;
 }
 
 .faq-title {
@@ -61,7 +63,8 @@
 
 .faq-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width:100%;
 }
 
 .question-img {
@@ -112,14 +115,14 @@
     .last-bg {
         height: unset;
         margin-top: 500px;
-       
     }
     .faq-container {
-        max-width: auto;
+        /* max-width: auto; */
+        weight:100%;
         margin-top: -100px;
         position: relative;
         margin: -100px auto;
-        padding: 0 auto; 
+        padding: 0 20px 0 20px ; 
     }
     .glow-area-five, .question-img {
         display: none;

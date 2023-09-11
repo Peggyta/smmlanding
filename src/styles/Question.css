@@ -4,6 +4,7 @@
     padding-inline: 30px;
     cursor: pointer;
     position: relative;
+    width:100%;
 }
 
 .question-answer-box:hover {

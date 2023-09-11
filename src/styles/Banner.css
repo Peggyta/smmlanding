@@ -7,6 +7,7 @@
 .banner {
     display: flex;
     flex-direction: column;
+    padding-left:24px;
 }
 
 .img-container {
@@ -154,7 +155,7 @@
     }
     .banner {
         margin: auto;
-        padding-inline: 60px; 
+        /* padding-inline: 60px;  */
         width: 100%; 
     }
     
@@ -176,6 +177,7 @@
 
     .services-btn {
         width: auto;
+        padding-right: 20px;
     }
     
     .services-text {

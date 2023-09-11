@@ -16,7 +16,7 @@ const MobileBegin = () => {
                     <div className='down-logo one'><img src={downLogo} alt='logo' /></div>
                 </div>
                 <div className='mobile-begin-text'>
-                    <p className='second-line'>Begin with signing up and and then log in to your account</p>
+                    <p className='second-line'>Begin with signing up and then log in to your account</p>
                 </div>
             </div>
             <div className='mobile-begin-card'>

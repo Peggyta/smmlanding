@@ -1,12 +1,14 @@
 .sign-container {
     max-width: 1170px;
     margin: -160px auto;
+    margin-top: 20px;
 }
 
 .scroll-section {
     gap: 3px;
     position: relative;
     z-index: 0;
+    padding-left:29px;
 }
 
 .scroll-img, .scroll-text {
@@ -30,7 +32,7 @@
     width: 1px;
     border-left: 1px solid var(--pink);
     position: absolute;
-    left: 7px;
+    left: 37px;
     top:64px;
 }
 
@@ -413,8 +415,7 @@ input[type=checkbox]:checked {
         padding: 16px 0 12px 20px ;
     }
     .input-icon-hide {
-        right: 5px;
-        top: 12px
+        display:none;
     }
     .switch {
         width: 45px;
